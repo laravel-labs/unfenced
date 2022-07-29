@@ -43,7 +43,7 @@ echo $converter->convert('...');
 
 Features are enabled via the "info" string of the code fence.
 
-Note that this extension does not include any CSS.
+**Note that this extension does not include any CSS.**
 
 ### Adding file names
 
@@ -52,6 +52,8 @@ To display a file name above your code, add the `filename` attribute:
     ```php filename=src/Hello.php
     // ...
     ```
+
+![image](https://user-images.githubusercontent.com/4977161/181671748-5dee27a6-2ab5-44a1-b787-67dad273ad99.png)
 
 ### Adding tabs
 
@@ -65,7 +67,19 @@ Adjacent code fences can be grouped into a tabbed view by specifying the `tab` a
     // ...
     ```
 
-You may also include the `filename` attribute, which is especially helpful when providing code samples where the file name differs depending on the language.
+![image](https://user-images.githubusercontent.com/4977161/181671943-4edc275c-fd89-4611-bbea-3cefa0c11fad.png)
+
+You may also include the `filename` attribute, which is especially helpful when providing code samples where the file name differs depending on the language:
+
+    ```vue tab=Vue filename=Welcome.vue
+    // ...
+    ```
+
+    ```javascript tab=React=Welcome.jsx
+    // ...
+    ```
+
+![image](https://user-images.githubusercontent.com/4977161/181672298-31d54b7e-43a6-4c96-be64-7195d553a9cb.png)
 
 The extension will inject JavaScript into your page when tabs are used. The JavaScript enables the following features:
 
