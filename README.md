@@ -75,7 +75,7 @@ You may also include the `filename` attribute, which is especially helpful when 
     // ...
     ```
 
-    ```javascript tab=React=Welcome.jsx
+    ```javascript tab=React filename=Welcome.jsx
     // ...
     ```
 
