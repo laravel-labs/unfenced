@@ -3,6 +3,7 @@
 namespace Laravel\Unfenced\Renderer;
 
 use Laravel\Unfenced\Node\FencedCodeContainer;
+use Laravel\Unfenced\Node\TabbedCode;
 use League\CommonMark\Node\Node;
 use League\CommonMark\Renderer\ChildNodeRendererInterface;
 use League\CommonMark\Renderer\NodeRendererInterface;
@@ -19,7 +20,10 @@ class FencedCodeContainerRenderer implements NodeRendererInterface
         return new HtmlElement(
             'div',
             array_filter([
-                'class' => 'code-container',
+                'class' => implode(' ', array_filter([
+                    'code-container',
+                    $node->parent() instanceof TabbedCode && $node->previous() === null ? 'active' : null,
+                ])),
                 'data-tab' => $node->tab(),
             ]),
             [
