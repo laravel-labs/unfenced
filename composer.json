@@ -1,0 +1,23 @@
+{
+    "name": "laravel/unfenced",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Unfenced\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jess Archer",
+            "email": "jess@jessarcher.com"
+        }
+    ],
+    "require": {
+        "league/commonmark": "^2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
