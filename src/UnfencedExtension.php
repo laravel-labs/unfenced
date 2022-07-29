@@ -74,21 +74,18 @@ class UnfencedExtension implements ConfigurableExtensionInterface, Configuration
             return false;
         }
 
-        $firstNode = $node;
-
-        $tabs = [
-            clone $firstNode,
-        ];
-
-        while ($node->next() instanceof FencedCodeContainer) {
+        $nodes = [];
+        while ($node instanceof FencedCodeContainer) {
+            $nodes[] = $node;
             $node = $node->next();
-            $tabs[] = clone $node;
-            $node->detach();
         }
 
-        $tabbedCode = new TabbedCode($tabs);
+        $tabbedCode = new TabbedCode([
+            clone $nodes[0],
+            ...array_slice($nodes, 1),
+        ]);
 
-        $firstNode->replaceWith($tabbedCode);
+        $nodes[0]->replaceWith($tabbedCode);
 
         return true;
     }

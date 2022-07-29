@@ -5,3 +5,7 @@
 ```javascript tab=React
 //
 ```
+
+```javascript tab=Vanilla
+//
+```
