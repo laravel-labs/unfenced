@@ -67,7 +67,8 @@ Adjacent code fences can be grouped into a tabbed view by specifying the `tab` a
     // ...
     ```
 
-![image](https://user-images.githubusercontent.com/4977161/181671943-4edc275c-fd89-4611-bbea-3cefa0c11fad.png)
+![image](https://user-images.githubusercontent.com/4977161/181767792-799c765e-1a9e-4e22-83f9-ee054a7e6c4d.png)
+
 
 You may also include the `filename` attribute, which is especially helpful when providing code samples where the file name differs depending on the language:
 
@@ -79,7 +80,8 @@ You may also include the `filename` attribute, which is especially helpful when 
     // ...
     ```
 
-![image](https://user-images.githubusercontent.com/4977161/181672298-31d54b7e-43a6-4c96-be64-7195d553a9cb.png)
+![image](https://user-images.githubusercontent.com/4977161/181767965-2103194b-96da-4733-acca-6a85d424dd22.png)
+
 
 The extension will inject JavaScript into your page when tabs are used. The JavaScript enables the following features:
 
