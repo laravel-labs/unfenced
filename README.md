@@ -43,7 +43,7 @@ echo $converter->convert('...');
 
 Features are enabled via the "info" string of the code fence.
 
-**Note that this extension does not include any CSS.**
+> **Note** This extension does not include any CSS.
 
 ### Adding file names
 
