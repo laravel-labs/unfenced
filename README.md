@@ -87,4 +87,4 @@ The extension will inject JavaScript into your page when tabs are used. The Java
 
 * It will apply an `active` class to the active tab button and tab content. You may use CSS to highlight the active tab, and hide the inactive tab content.
 * If multiple tabbed sections are found, and they contain identical tab names, they will be synchronized. I.e, clicking the "React" tab in one section, will switch to that tab in all sections.
-* The active tab is saved to the browsers local storage so that is can persist between pages and even visits.
+* The active tab is saved to the browsers local storage so that it persists between pages and visits.
